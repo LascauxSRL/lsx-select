@@ -107,7 +107,7 @@ let styles = `
 `;
 
 @Component({
-  selector: 'ng-select',
+  selector: 'ngx-select',
   styles: [styles],
   providers: [
     {
@@ -259,6 +259,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
   @Input() public textField:string = 'text';
   @Input() public childrenField:string = 'children';
   @Input() public multiple:boolean = false;
+  
 
   @Input()
   public set items(value:Array<any>) {
@@ -308,6 +309,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
   @Output() public removed:EventEmitter<any> = new EventEmitter();
   @Output() public typed:EventEmitter<any> = new EventEmitter();
   @Output() public opened:EventEmitter<any> = new EventEmitter();
+  @Output() public closed:EventEmitter<any> = new EventEmitter();
 
   public options:Array<SelectItem> = [];
   public itemObjects:Array<SelectItem> = [];
@@ -320,7 +322,6 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
 
   private set optionsOpened(value:boolean){
     this._optionsOpened = value;
-    this.opened.emit(value);
   }
 
   private get optionsOpened(): boolean{
@@ -461,6 +462,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
   public clickedOutside():void {
     this.inputMode = false;
     this.optionsOpened = false;
+    this.closed.emit();
   }
 
   public get firstItemHasChildren():boolean {
@@ -548,6 +550,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
       this.behavior.first();
     }
     this.optionsOpened = true;
+    this.opened.emit();
   }
 
   private hideOptions():void {

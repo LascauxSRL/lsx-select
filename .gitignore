@@ -29,6 +29,8 @@ npm-debug.log
 .DS_Store
 Thumbs.db
 
+*lock
+
 
 /demo/e2e/*.js
 /demo/e2e/*.map

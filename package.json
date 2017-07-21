@@ -1,8 +1,8 @@
 {
-  "name": "ng2-select-base",
-  "version": "1.2.0",
+  "name": "ngx-select",
+  "version": "2.0.0",
   "private": true,
-  "description": "Angular2 based replacement for select boxes",
+  "description": "Angular2+ based replacement for select boxes",
   "scripts": {
     "lite-server": "lite-server -c demo/bs-config.json",
     "demo.serve": "run-s build link demo.build lite-server",
@@ -35,27 +35,27 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ng2-select.git"
+    "url": "git+ssh://git@github.com/lorecioni/ngx-select.git"
   },
   "bugs": {
-    "url": "https://github.com/valor-software/ng2-select/issues"
+    "url": "https://github.com/lorecioni/ngx-select/issues"
   },
-  "homepage": "https://github.com/valor-software/ng2-select#readme",
+  "homepage": "https://github.com/lorecioni/ngx-select#readme",
   "peerDependencies": {
-    "@angular/common": "^2.3.0",
-    "@angular/core": "^2.3.0"
+    "@angular/common": "^4.3.0",
+    "@angular/core": "^4.3.0"
   },
   "devDependencies": {
-    "@angular/common": "2.4.3",
-    "@angular/compiler": "2.4.3",
-    "@angular/compiler-cli": "2.4.3",
-    "@angular/core": "2.4.3",
-    "@angular/forms": "2.4.3",
-    "@angular/http": "2.4.3",
-    "@angular/language-service": "2.4.3",
-    "@angular/platform-browser": "2.4.3",
-    "@angular/platform-browser-dynamic": "2.4.3",
-    "@angular/router": "3.4.3",
+    "@angular/common": "4.3.0",
+    "@angular/compiler": "4.3.0",
+    "@angular/compiler-cli": "4.3.0",
+    "@angular/core": "4.3.0",
+    "@angular/forms": "4.3.0",
+    "@angular/http": "4.3.0",
+    "@angular/language-service": "4.3.0",
+    "@angular/platform-browser": "4.3.0",
+    "@angular/platform-browser-dynamic": "4.3.0",
+    "@angular/router": "4.3.0",
     "@angular/tsc-wrapped": "0.5.1",
     "@ngtools/webpack": "1.2.3",
     "@types/jasmine": "2.5.40",
@@ -107,12 +107,17 @@
     "tslint": "4.3.1",
     "tslint-config-valorsoft": "1.2.0",
     "typedoc": "0.5.5",
-    "typescript": "2.1.5",
+    "typescript": "2.4.2",
     "wallaby-webpack": "0.0.30",
     "webdriver-manager": "11.1.1",
-    "zone.js": "0.7.5"
+    "zone.js": "0.8.14"
   },
   "contributors": [
+    {
+      "name": "Lorenzo Cioni",
+      "email": "lorenzo.cioni@lascaux.it",
+      "url": "https://github.com/lorecioni"
+    },
     {
       "name": "Vyacheslav Chub",
       "email": "vyacheslav.chub@valor-software.com",
