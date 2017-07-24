@@ -1,7 +1,7 @@
 {
   "name": "lsx-select",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Angular2+ component for select boxes",
   "scripts": {
     "lite-server": "lite-server -c demo/bs-config.json",
@@ -35,9 +35,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LascauxSRL/ngx-select.git"
+    "url": "git+ssh://git@github.com/LascauxSRL/lsx-select.git"
   },
-  "homepage": "https://github.com/LascauxSRL/ngx-select#readme",
+  "homepage": "https://github.com/LascauxSRL/lsx-select#readme",
   "peerDependencies": {
     "@angular/common": "^4.3.0",
     "@angular/core": "^4.3.0"
