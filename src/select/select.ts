@@ -107,7 +107,7 @@ let styles = `
 `;
 
 @Component({
-  selector: 'ngx-select',
+  selector: 'lsx-select',
   styles: [styles],
   providers: [
     {
