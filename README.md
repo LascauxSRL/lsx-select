@@ -1,6 +1,6 @@
-# A Select Angular2+ component
+# A Select Angular2+ component. An fork of [valor-software/ng2-select](https://github.com/valor-software/ng2-select)
 
-## ng2-select [![npm downloads](https://img.shields.io/npm/dm/ng2-select.svg)](https://npmjs.org/ng2-select)
+## lsx-select [![npm downloads](https://img.shields.io/npm/dm/lsx-select.svg)](https://npmjs.org/lsx-select)
 
 ## Quick start
 
@@ -11,4 +11,4 @@
 2. Include `lsx-select.css` in your project
 
 
-### This is an extension of [valor-software/ng2-select](https://github.com/valor-software/ng2-select)
+### This is 
