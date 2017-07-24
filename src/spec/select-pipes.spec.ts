@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectModule } from '../ngx-select';
+import { SelectModule } from '../lsx-select';
 
 const html = ``;
 
-describe('Component: ngx-select', () => {
+describe('Component: lsx-select', () => {
   let fixture:ComponentFixture<any>;
   let context:TestSelectComponent;
 
@@ -27,7 +27,7 @@ describe('Component: ngx-select', () => {
 
 @Component({
   selector: 'select-test',
-  template: '<ngx-select></ngx-select>'
+  template: '<lsx-select></lsx-select>'
 })
 
 class TestSelectComponent {
