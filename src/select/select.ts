@@ -142,7 +142,7 @@ let styles = `
         </a>
       </span>
     </div>
-    <input type="text" autocomplete="false" tabindex="-1"
+    <input type="text" autocomplete="off" tabindex="-1"
            (keydown)="inputEvent($event)"
            (keyup)="inputEvent($event, true)"
            [disabled]="disabled"
@@ -608,7 +608,7 @@ export class Behavior {
   }
 
   public ensureHighlightVisible(optionsMap:Map<string, number> = void 0):void {
-    let container = this.actor.element.nativeElement.querySelector('.ui-select-choices-content');
+    let container = this.actor.element.nativeElement.querySelector('.ui-select-choices.dropdown-menu');
     if (!container) {
       return;
     }
@@ -627,7 +627,7 @@ export class Behavior {
     let posY:number = highlighted.offsetTop + highlighted.clientHeight - container.scrollTop;
     let height:number = container.offsetHeight;
     if (posY > height) {
-      container.scrollTop += posY - height;
+      container.scrollTop += posY - height + 20;
     } else if (posY < highlighted.clientHeight) {
       container.scrollTop -= highlighted.clientHeight - posY;
     }
